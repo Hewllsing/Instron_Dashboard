@@ -1,0 +1,128 @@
+.instron-results {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.instron-results__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.instron-results__title {
+    margin: 0;
+    font-size: 24px;
+    color: #111827;
+}
+
+.instron-results__subtitle {
+    margin: 6px 0 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.instron-results__button {
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.instron-results__button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.instron-results__error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.instron-results__loading,
+.instron-results__empty {
+    color: #6b7280;
+    padding: 16px 0;
+}
+
+.instron-results__card {
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    background: #f9fafb;
+}
+
+.instron-results__card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.instron-results__card-title {
+    margin: 0;
+    color: #111827;
+    font-size: 18px;
+}
+
+.instron-results__date {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.instron-results__table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.instron-results__table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    background: white;
+}
+
+.instron-results__table th {
+    background: #111827;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.instron-results__table td {
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    color: #374151;
+}
+
+.instron-results__table tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+.instron-results__table tbody tr:hover {
+    background: #f3f4f6;
+}
+
+@media (max-width: 768px) {
+    .instron-results__header,
+    .instron-results__card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .instron-results__button {
+        width: 100%;
+    }
+}

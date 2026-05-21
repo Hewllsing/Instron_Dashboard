@@ -1,0 +1,128 @@
+/* =========================================================
+   HEALTH SECTION
+========================================================= */
+
+.instron-health {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.instron-health__header {
+    margin-bottom: 24px;
+}
+
+.instron-health__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.instron-health__subtitle {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.instron-health__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.instron-health__card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 18px;
+    transition: 0.2s ease;
+}
+
+.instron-health__card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.instron-health__label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.instron-health__value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   STATUS COLORS
+========================================================= */
+
+.instron-health__value--online {
+    color: #16a34a;
+}
+
+.instron-health__value--offline {
+    color: #dc2626;
+}
+
+.instron-health__value--connected {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .instron-health__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .instron-health {
+        padding: 20px;
+    }
+
+    .instron-health__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instron-health__title {
+        font-size: 20px;
+    }
+
+}
