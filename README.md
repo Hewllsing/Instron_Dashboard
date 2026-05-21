@@ -50,7 +50,6 @@ Instron Machine
 
 
 📂 Estrutura do Projeto
-Frontend
 frontend/
 │
 ├── src/
@@ -61,7 +60,7 @@ frontend/
 │   ├── assets/
 │   │
 │   └── App.vue
-Backend
+
 backend/
 │
 ├── src/
@@ -73,6 +72,7 @@ backend/
 │   ├── services/
 │   │
 │   └── server.js
+
 🔌 Funcionalidades
 ✅ API Health Monitoring
 
