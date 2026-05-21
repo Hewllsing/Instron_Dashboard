@@ -27,6 +27,8 @@ InstronBridgeSelfHost API (C#)
 Bluehill / Instron
         ↓
 MariaDB
+
+
 ⚙️ Tecnologias Utilizadas
 Frontend
 Vue.js 3
@@ -45,6 +47,8 @@ ASP.NET Web API
 OWIN Self Host
 Bluehill API
 Instron Machine
+
+
 📂 Estrutura do Projeto
 Frontend
 frontend/
@@ -103,6 +107,8 @@ Ideal para:
 desenvolvimento frontend
 testes de dashboard
 testes sem máquina conectada
+
+
 🗄️ Base de Dados
 Tabela Resultados
 CREATE TABLE resultados (
@@ -111,6 +117,8 @@ CREATE TABLE resultados (
     result_json LONGTEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
 📡 Endpoints Backend
 Health
 GET /api/instron/health
@@ -136,12 +144,15 @@ DB_PASSWORD=
 DB_NAME=instron_db
 Executar backend
 npm run dev
+
 3️⃣ Frontend
 cd frontend
 
 npm install
 Executar frontend
 npm run dev
+
+
 🧪 Integração com InstronBridgeSelfHost
 
 O backend Node.js comunica diretamente com a API:
@@ -152,7 +163,10 @@ Endpoints utilizados:
 
 /api/instron/health
 /api/instron/results/formatted
+
+
 📈 Melhorias Futuras
+
 WebSockets para atualização em tempo real
 Dashboard analytics
 Gráficos de ensaios
@@ -163,6 +177,8 @@ Exportação PDF/Excel
 Docker
 Deploy industrial local
 Multi-machine support
+
+
 🏭 Objetivo do Projeto
 
 Este projeto foi desenvolvido para estudo e demonstração de:
@@ -174,10 +190,11 @@ Dashboards modernos
 Sistemas laboratoriais
 Integração com equipamentos reais
 Persistência de dados industriais
+
+
 👨‍💻 Autor
 
 Leonardo Souza
-
 Software Developer
 
 C#
